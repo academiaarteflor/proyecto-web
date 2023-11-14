@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@700&family=Fraunces:opsz@9..144&display=swap");
+body {
+  font-family: "Fraunces", serif;
+}
+
+main {
+  background-color: rgb(240, 219, 180);
+}
+
+.h3 {
+  font-family: "Domine", serif;
+  font-weight: 700;
+}
+
+.h5 {
+  font-family: "Domine", serif;
+}
+
+.display-2 {
+  font-family: "Domine", serif;
+  font-weight: bold;
+}
+
+.navbar-expand-lg {
+  background-color: #f0b295;
+}
+
+.btn-outline-secondary {
+  --bs-btn-color: white;
+  --bs-btn-bg: #214cc2;
+}
+
+footer {
+  height: 30vh;
+  background-color: #f0b295;
+}/*# sourceMappingURL=estilos.css.map */

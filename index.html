@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Educación en Artes Liberales </title>
+
+    <!--link de bootstrap iconografía-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!--mis estilos CSS-->
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <!--link a lightbox-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+  
+</head>
+
+<body>
+
+  <!--Abre menu desplegable-->
+  <nav class="navbar navbar-expand-lg ";> 
+    <div class="container-md">
+  
+        <a class="navbar-brand" href="#">
+          <img src="imagenes/logo.svg" alt="Inicio" width="30">
+        </a>
+   
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#desplegable"   a>
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="desplegable">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="h3 nav-link active"  href="#"> Artes Liberales </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="h3 nav-link"  href="#"> Quienes somos </a>
+          </li>
+        
+          <li class="nav-item dropdown dropend">
+            <a class=" h3 nav-link dropdown-toggle" href="#"  data-bs-toggle="dropdown" >
+             Menú
+            </a>
+            <ul class="dropdown-menu">
+      
+              <li><a class="dropdown-item" href="#">Maestrias</a></li>
+              <li><a class="dropdown-item" href="#">Doctorados</a></li>
+              <li><button class="dropdown-item" data-bs-toggle="modal" data-bs-target="#miModal"> Contacto </button></li>
+              <!--el boton del modal-->
+              
+            </ul>
+
+          
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav> <!--Cierra menu desplegable-->
+
+  
+<!--Abre modal-->
+<div class="modal fade" id="miModal" tabindex="-1" > 
+  <div class="modal-dialog modal-fullscreen-lg-down">
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title h6" id="miModal"> Formulario de contacto </h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <form class="needs-validation" novalidate>
+
+          <div class="row">
+            
+            <div class="col-md-6">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input id="nombre" class="form-control" pattern="[a-zA-Z]{1,20}" required name="nombre" type="text">
+
+          <div class="valid-feedback"> Está bien el campo </div> 
+          <div class="invalid-feedback"> Está mal el campo </div> <!--validacion nombre-->
+
+        </div>
+
+        <div class="col-md-6">
+          <label for="email" class="form-label">Email</label>
+          <input id="email" class="form-control" required name="email" type= "email" >
+
+          <div class="valid-feedback"> Está bien el campo </div> 
+          <div class="invalid-feedback"> Está mal el campo </div> <!--validacion mail-->
+
+        </div>
+  
+        
+        </div>
+
+<div class="row">
+        <div class="col-12">
+          <label for="comentarios" class="form-label"> Dejanos tu consulta </label>
+          <textarea name="comentarios" class="form-control" id="comentarios"> </textarea>
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <button class="btn btn-outline-success mt-2">Enviar</button>
+        </div>
+  
+        </div>
+
+      </form>
+      </div> <!--cierra el body del modal, donde cierra el formulario-->
+
+      <div class="modal-footer">
+       
+      </div>
+
+    </div>
+  </div>
+</div> <!--cierra modal-->
+
+<!--abre MAIN-->
+
+    <main class="container-fluid">
+
+      <section class="container-fluid"> <!--Abre primera imagen-->
+        <img src="imagenes/foto 1.jpg" class="img-fluid mb-5" alt="Artista">
+      </section> <!--Cierra primera imagen-->
+
+      <!--Abre primer titulo-->
+      <div class="row justify-content-center ">
+      <section class="col-md-9">
+
+        <p class="display-2"> Academia de Artes Liberales</p>
+        <p> Los trabajos del futuro exigirán las capacidades y habilidades cognitivas asociadas con una educación en artes liberales. Nuestros alumnos tendran la capacidad de cuestionar y desorganizar lo que es, aportando así una mirada crítica, diferenciadora y creadora de nuevos sentidos. </p>
+
+      </section>
+      </div>
+      <!--Cierra primer titulo-->
+
+
+      <!--Abre 3 columnas-->
+      <div class="row mt-2 mb-5 justify-content-center">
+      <section class="col-md-3 text-center mt-5"> 
+        <p class="h5"> Aprendizaje multidisciplinario </p>
+        <p> Contamos con equipos docente de politologos, economistas, sociologos, antropologos, artistas plasticos y visuales y músicos.  </p>
+        <a href="https://agmu.edu/es/schooldivision/escuela-artes-liberales" target="_blank" class="h5 btn btn-outline-secondary"> Conocé más </a>
+
+      </section>
+
+      <section class="col-md-3 text-center mt-5">
+        <p class="h5"> Desarrollo de soft skills </p>
+        <p> Los alumnos aprenderan de adapabilidad empatia y resiliencie, cualidades muy importnates para cualquier tipo de trabajo.  </p>
+        <a href="https://agmu.edu/es/schooldivision/escuela-artes-liberales" target="_blank" class="h5 btn btn-outline-secondary"> Conocé más </a>
+      </section>
+
+      <section class="col-md-3 text-center mt-5">
+        <p class="h5"> Oportunidad de empleo </p>
+        <p> Los alumnos de ultimo año podran aplcar a programas junior para trabajar en las empresas mas importnates del mercado digital </p>
+        <a href="https://agmu.edu/es/schooldivision/escuela-artes-liberales" target="_blank" class="h5 btn btn-outline-secondary"> Conocé más </a>
+        
+        
+      </section>
+      </div>
+      <!--Cierra 3 columnas-->
+
+
+      <!--Abre 2 columnas carrusel y texto-->  
+      <div class="row mt-5 mb-5 justify-content-center">
+
+        <section class="col-md-4"> <!--abre carrusel-->
+          <div id="miSlider" class="carousel slide"> <!--abre carousel-->
+            
+            <div class="carousel-indicators"> <!--abre indicadores-->
+
+              <button type="button" data-bs-target="#miSlider" data-bs-slide-to="0" class="active"></button>
+
+              <button type="button" data-bs-target="#miSlider" data-bs-slide-to="1" ></button>
+
+            </div> <!--cierra indicadores-->
+
+            <div class="carousel-inner rounded"> <!--abre las imagenes-->
+
+              <div class="carousel-item active"> <!--foto 1-->
+                <img src="imagenes/foto IA.jpg" class="d-block w-100 rounded-5 img-thumbnail" alt="foto ia">
+              </div>
+
+              <div class="carousel-item"> <!--foto 2-->
+                <img src="imagenes/foto pintura.jpg" class="d-block w-100 rounded-5 img-thumbnail" alt="foto 2">
+              </div>
+
+            </div> <!--cierra las imagenes-->
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#miSlider" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" ></span>
+              <span class="visually-hidden">Previous</span>
+            </button> <!--flecha derecha-->
+
+            <button class="carousel-control-next" type="button" data-bs-target="#miSlider" data-bs-slide="next">
+              <span class="carousel-control-next-icon" ></span>
+              <span class="visually-hidden">Next</span>
+            </button> <!--flecha derecha-->
+
+          </div> <!--cierra carousel-->
+        </section> <!--cierra carrusel-->
+
+        <section class="col-md-4 mt-4">
+          <p class="h3">Humanistas en tencologia</p>
+          <p> Considerando el escenario tecnológico actual, es crucial que los artistas y especialistas en humanidades asuman un papel importante de diseño de las IA, ya que su modo de conocer y representar lo que existe es muy diferente del de los programadores, y por ende, complementaria. </p>
+
+          <a href="https://agmu.edu/es/schooldivision/escuela-artes-liberales" target="_blank" class="h5 btn btn-outline-secondary"> Nuestro research en IA </a>
+
+        </section>
+
+      </div>
+       <!--Cierra 2 columnas carrusel y texto-->  
+
+
+
+       <!--Abre texto con dos fotos de lightbox abajo-->
+       <div class="row mt-5 justify-content-center">
+
+        <section class="col-md-9 text-center"> <!--texto-->
+          <p class="h3"> Creatividad como filosofía de vida </p>
+          <p> Nuestro objtivo es que nustros alumnos adqueiran habilidades valiosas para sus futuros laborales pero tambien que puedan aprender el arte de la creatividad para aplicar en sus vidas personales </p>
+        </section>
+
+        <section class="col-md-9 content-center"> <!--galeria lightbox-->
+
+              
+              <section class=" mx-auto p-3 d-flex justify-content-between">
+
+
+                <div class="col-md-5 d-flex flex-column"> 
+                  <a href="imagenes/foto museo.jpg" data-lightbox="galeria" data-title="Persona observando y reflexionando sobre una obra de arte "><img class=" img-md rounded-5 d-block w-100 img-4 img-thumbnail" src="imagenes/foto museo.jpg" alt=""></a>
+                </div>
+          
+                <div class="col-md-5 d-flex flex-column"> <a href="imagenes/foto pinceles.jpg" data-lightbox="galeria" data-title="Paleta de pintura">
+                  <img class="img-md rounded-5 d-block w-100 img-4 img-thumbnail" src="imagenes/foto pinceles.jpg" alt=""></a>
+            </div>
+          
+          </section>
+
+       </div>
+      </section>
+       <!--Cierra texto con dos fotos de lightbox-->
+
+    </main>
+
+    <footer> 
+
+      <div class="row justify-content-center ">
+      <section class="col-md-9 text-end">
+
+       <p class="h6 mt-5">Inscripciones abiertas para becas 2024</p>
+
+       <a href="https://agmu.edu/es/schooldivision/escuela-artes-liberales" target="_blank" class="btn btn-primary"> Encontrá tu beca ideal </a>
+
+      </section>
+      </div>
+      
+     </footer>
+
+
+
+
+
+<!--link a javascript, para trabajar con componentes de boostrap-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+<!--link de codigo-->
+<script src="js/codigo.js"> </script>
+
+<!--link a jv, lightbox-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"> </script>
+
+</body>
+
+</html>
